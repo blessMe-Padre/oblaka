@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Облака - йога студия</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body class="bg-">
+    <div class="h-screen grid grid-rows-[auto_1fr_auto]">
+        <header class="relative md:bg-transparent">
+            <div class="container gap-5 items-center justify-between hidden md:flex md:pt-2">
+                <img src="img/logo.png" width="228" height="98" alt="лого">
+                <span class="text-main-black">г.&nbsp;Владивосток</span>
+                <ul class="flex gap-2 flex-wrap text-main-black">
+                    <li class="mr-4"><a class=" hover:text-blue transition-colors" href="#">О нас</a></li>
+                    <li class="mr-4"><a class=" hover:text-blue transition-colors" href="#">Преподаватели</a></li>
+                    <li class="mr-4"><a class=" hover:text-blue transition-colors" href="#">Анонсы</a></li>
+                    <li class="mr-4"><a class=" hover:text-blue transition-colors" href="#">Контакты</a></li>
+                    <li class="mr-4"><a class=" hover:text-blue transition-colors" href="#">Вопросы</a></li>
+                    <li class="mr-4"><a class=" hover:text-blue transition-colors" href="#">Отзывы</a></li>
+                </ul>
+                <a class="header-call-button" href="#">Записаться</a>
+            </div>
+
+            <!-- мобильное меню -->
+            <div class="flex flex-col items-start justify-between pt-20 overflow-hidden md:hidden">
+                <img class="absolute top-5 left-5" src="img/logo.png" width="114" height="48" alt="лого">
+                <span class="text-main-black hidden">г. Владивосток</span>
+                <div class="mobile-menu bg-metal">
+                    <ul class="flex flex-col pb-11 text-main-black pt-4">
+                        <li class="px-4 mb-4"><a class="text-white hover:text-blue transition-colors" href="#">О нас</a>
+                        </li>
+                        <li class="px-4 mb-4"><a class="text-white hover:text-blue transition-colors"
+                                href="#">Преподаватели</a>
+                        </li>
+                        <li class="px-4 mb-4"><a class="text-white hover:text-blue transition-colors"
+                                href="#">Анонсы</a></li>
+                        <li class="px-4 mb-4"><a class="text-white hover:text-blue transition-colors"
+                                href="#">Контакты</a></li>
+                        <li class="px-4 mb-4"><a class="text-white hover:text-blue transition-colors"
+                                href="#">Вопросы</a></li>
+                        <li class="px-4 mb-4"><a class="text-white hover:text-blue transition-colors"
+                                href="#">Отзывы</a></li>
+                    </ul>
+                    <a class="header-call-button block w-full mx-3" href="#">Записаться</a>
+                </div>
+
+                <button class="btn-close-menu md:hidden absolute top-5 right-5">
+                    <svg viewBox="0 0 64 48">
+                        <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                        <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                        <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <section class="bg-[url('../src/img/bg-1.jpg')] min-h-[750px] -mt-[108px] h-1">
+                <div class="container h-full flex flex-col justify-between">
+                    <div class="pt-64">
+                        <div class="flex items-center gap-2">
+                            <h1 class="text-[32px] md:text-[67px] text-blue-light leading-none">Студия йоги</h1>
+                            <img class="mt-[-15px]" src="img/title.png" width="225" height="82" alt="облака">
+                        </div>
+                        <p class="text-[32px] md:text-[67px] text-blue-light max-w-[742px] leading-none">Путь
+                            к&nbsp;здоровому Телу
+                            и&nbsp;духу</p>
+                    </div>
+
+                    <ul class="flex flex-wrap gap-6 -mb-6">
+                        <li class="shadow-item">
+                            <img src="img/hero/icon-1.png" width="45" height="45" alt="иконка">
+                            <p class="text-main-black text-lg">Удобное местоположение</p>
+                        </li>
+                        <li class="shadow-item">
+                            <img src="img/hero/icon-2.png" width="45" height="45" alt="иконка">
+                            <p>Внимательные преподаватели</p>
+                        </li>
+                        <li class="shadow-item">
+                            <img src="img/hero/icon-3.png" width="45" height="45" alt="иконка">
+                            <p>Разнообразные программы</p>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <a href="#">
+                    <div type="button" class="callback-bt">
+                        <div class="text-call">
+                            <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21 5.5C21 14.0604 14.0604 21 5.5 21C5.11378 21 4.73086 20.9859 4.35172 20.9581C3.91662 20.9262 3.69906 20.9103 3.50103 20.7963C3.33701 20.7019 3.18146 20.5345 3.09925 20.364C3 20.1582 3 19.9181 3 19.438V16.6207C3 16.2169 3 16.015 3.06645 15.842C3.12515 15.6891 3.22049 15.553 3.3441 15.4456C3.48403 15.324 3.67376 15.255 4.05321 15.117L7.26005 13.9509C7.70153 13.7904 7.92227 13.7101 8.1317 13.7237C8.31637 13.7357 8.49408 13.7988 8.64506 13.9058C8.81628 14.0271 8.93713 14.2285 9.17882 14.6314L10 16C12.6499 14.7999 14.7981 12.6489 16 10L14.6314 9.17882C14.2285 8.93713 14.0271 8.81628 13.9058 8.64506C13.7988 8.49408 13.7357 8.31637 13.7237 8.1317C13.7101 7.92227 13.7904 7.70153 13.9509 7.26005L13.9509 7.26005L15.117 4.05321C15.255 3.67376 15.324 3.48403 15.4456 3.3441C15.553 3.22049 15.6891 3.12515 15.842 3.06645C16.015 3 16.2169 3 16.6207 3H19.438C19.9181 3 20.1582 3 20.364 3.09925C20.5345 3.18146 20.7019 3.33701 20.7963 3.50103C20.9103 3.69907 20.9262 3.91662 20.9581 4.35173C20.9859 4.73086 21 5.11378 21 5.5Z"
+                                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </section>
+        </main>
+
+        <footer class="min-h-2 bg-slate-600">
+            footer
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
