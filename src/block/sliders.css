@@ -1,8 +1,7 @@
-
 .teachers {
     width: 0;
     min-width: 100%;
-  }
+}
 
 .teachers-section .swiper-button-wrapper {
     position: relative;
@@ -14,7 +13,9 @@
     margin: 0 auto;
     margin-top: 30px;
 }
-.teachers-section .swiper-button-next, .swiper-button-prev {
+
+.teachers-section .swiper-button-next,
+.swiper-button-prev {
     width: 50px;
     height: 44px;
 }

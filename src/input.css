@@ -8,6 +8,7 @@
 @import './block/call-btn.css';
 @import './block/swiper.css';
 @import './block/sliders.css';
+@import './block/faq.css';
 
 
 /* Импорт TailWind */
@@ -34,9 +35,14 @@
 /* Директивы классов */
 
 .header-call-button {
-    @apply py-5 px-8 bg-blue rounded-[160px] text-white font-semibold w-44 text-center border-solid border-blue border-[2px]
-    hover:bg-transparent hover:text-blue transition-all block;
+    @apply py-3 px-8 bg-blue rounded-[160px] text-white font-semibold w-44 text-center border-solid border-blue border-[2px] transition-all block;
 }
+
+.header-call-button:hover {
+    background-color: transparent;
+    color: #5278DA;
+}
+
 
 
 /* Прочие классы */
@@ -64,4 +70,25 @@
 
 .shadow-filter {
     filter: drop-shadow(0px 0px 11px rgba(133, 118, 38, 0.13));
+}
+
+.education-btn-wrapper {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 80px;
+    right: 80px;
+}
+
+@media (min-width: 1023px) {
+    .education__item {
+        grid-template-columns: 40% 60%;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-btn-wrapper {
+        right: 40px;
+    }
 }

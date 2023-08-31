@@ -24,11 +24,10 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    //слайдер "Наши преподаватели"
+    // слайдер "Наши преподаватели"
     const teachers = document.querySelector('.teachers');
     if (teachers) {
         const swiper = new Swiper('.teachers', {
-            // Optional parameters
             loop: true,
             spaceBetween: 20,
             breakpoints: {
@@ -50,13 +49,70 @@ window.addEventListener('DOMContentLoaded', () => {
                 },
             },
 
-            // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
         });
     }
+
+
+    //Tabs
+    const tabButtons = document.querySelectorAll("._tabs-item");
+    const tabs_blocks = document.querySelectorAll("._tabs-block");
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', (evt) => {
+            evt.preventDefault();
+            const targetBtn = evt.currentTarget;
+            const targetBtnId = targetBtn.getAttribute('data-tab');
+            const currentTab = document.querySelector(targetBtnId);
+
+            if (!targetBtn.classList.contains('_active')) {
+                tabButtons.forEach(button => {
+                    button.classList.remove('_active');
+                    button.classList.remove('is-active');
+                });
+
+                tabs_blocks.forEach(button => {
+                    button.classList.remove('_active');
+                });
+
+                targetBtn.classList.add('_active');
+                targetBtn.classList.add('is-active');
+                currentTab.classList.add('_active');
+            }
+        });
+    });
+
+    //accordions
+    const accordions = document.querySelectorAll("._tabs-accordion");
+
+    accordions.forEach(el => {
+        const button = el.querySelector('._tabs-button');
+        const content = el.querySelector('._tabs-content');
+
+        button.addEventListener('click', (evt) => {
+            evt.preventDefault();
+            const currentButton = evt.currentTarget;
+
+            currentButton.classList.toggle('_active');
+            content.classList.toggle('_active');
+
+            if (currentButton.classList.contains('_active')) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
+                content.style.maxHeight = null;
+            }
+
+        });
+    });
+
+    //     // slidesPerColumn: 1,
+    //     // centeredSlides: true,
+
+    //слайдер "Наши КЛИЕНТЫ"
+
 
     // DOMContentLoaded
 });
