@@ -1,11 +1,6 @@
-.teachers {
-    width: 0;
-    min-width: 100%;
-}
-
 .teachers-section .swiper-button-wrapper {
     position: relative;
-    width: 160px;
+    max-width: 160px;
     height: 60px;
     display: flex;
     align-items: center;
@@ -14,14 +9,35 @@
     margin-top: 30px;
 }
 
-.teachers-section .swiper-button-next,
+.clients-swiper .swiper-button-wrapper {
+    position: relative;
+    max-width: 660px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+@media (min-width: 1023px) {
+    .clients-swiper .swiper-button-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 600px;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+    }
+}
+
+.swiper-button-next,
 .swiper-button-prev {
     width: 50px;
     height: 44px;
 }
 
-.teachers-section .swiper-button-prev::before,
-.teachers-section .swiper-button-next::before {
+.swiper-button-prev::before,
+.swiper-button-next::before {
     content: '';
     position: absolute;
     width: 15px;
@@ -30,12 +46,12 @@
     background-color: #0084FF;
 }
 
-.teachers-section .swiper-button-prev::before {
+.swiper-button-prev::before {
     top: 30%;
     right: -10px;
 }
 
-.teachers-section .swiper-button-next::before {
+.swiper-button-next::before {
     top: 30%;
     left: -10px;
 }
