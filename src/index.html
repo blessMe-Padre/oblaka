@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Облака - йога студия</title>
     <link rel="stylesheet" href="../src/swiper-bundle.min.css">
-
+    <link rel="stylesheet" href="../src/animate.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
@@ -75,10 +75,13 @@
                 <div class="container h-full flex flex-col justify-between">
                     <div class="pt-64">
                         <div class="flex items-center gap-2">
-                            <h1 class="text-[32px] md:text-[67px] text-blue-light leading-none">Студия йоги</h1>
-                            <img class="mt-[-15px]" src="img/title.png" width="225" height="82" alt="облака">
+                            <h1 class="text-[32px] md:text-[67px] text-blue-light leading-none wow fadeInUp">Студия йоги
+                            </h1>
+                            <img class="mt-[-15px] wow zoomIn" data-wow-delay="1s" src="img/title.png" width="225"
+                                height="82" alt="облака">
                         </div>
-                        <p class="text-[32px] md:text-[67px] text-blue-light max-w-[742px] leading-none">Путь
+                        <p class="text-[32px] md:text-[67px] text-blue-light max-w-[742px] leading-none wow fadeInUp">
+                            Путь
                             к&nbsp;здоровому Телу
                             и&nbsp;духу</p>
                     </div>
@@ -121,7 +124,7 @@
                         <div>
                             <div class="relative">
                                 <div
-                                    class="inline-flex items-center gap-5 shadow-filter py-5 px-10 rounded-3xl bg-white absolute -top-6 md:top-10">
+                                    class="inline-flex items-center gap-5 shadow-filter py-5 px-10 rounded-3xl bg-white absolute -top-6 md:top-10 wow fadeInLeft">
                                     <img src="img/about/icon-1.png" alt="icon">
                                     <p>Всё для занятий</p>
                                 </div>
@@ -134,7 +137,7 @@
 
                             <div class="relative mt-5 mb-10 md:-top-24">
                                 <div
-                                    class="inline-flex items-center gap-5 shadow-filter py-5 px-10 rounded-3xl bg-white absolute -bottom-6 md:bottom-10 right-0">
+                                    class="inline-flex items-center gap-5 shadow-filter py-5 px-10 rounded-3xl bg-white absolute -bottom-6 md:bottom-10 right-0  wow fadeInRight">
                                     <img src=" img/about/icon-2.png" alt="icon">
                                     <p>Гибкое расписание</p>
                                 </div>
@@ -153,7 +156,8 @@
                                 развитие
                                 ума
                                 и&nbsp;тела</h2>
-                            <p class="text-light-black text-lg mb-10">Малое колебание позволяет пренебречь колебаниями
+                            <p class="text-light-black text-lg mb-10  wow fadeInUp">Малое колебание позволяет пренебречь
+                                колебаниями
                                 корпуса, хотя этого в&nbsp;любом случае
                                 требует интеграл от&nbsp;переменной величины. Время набора максимальной скорости,
                                 несмотря на&nbsp;внешние воздействия, периодично. Неустойчивость, как известно, быстро
@@ -164,14 +168,14 @@
                 </div>
             </section>
 
-            <section class="py-20 relative teachers-section w-0 min-w-[100%] page-section-2">
+            <section class="py-20 relative teachers-section w-0 min-w-[100%] page-section-2 wow fadeInUp">
                 <div class="container">
                     <h2 class="text-main-black uppercase text-3xl md:text-[44px] leading-tight mb-14 text-center">Наши
                         преподаватели
                     </h2>
                     <div class="teachers swiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide text-center">
+                            <div class="swiper-slide text-center  wow fadeInUp" data-wow-delay="0.2s">
                                 <a href="#">
                                     <img class="rounded-2xl mb-5" src="img/teachers/teacher-1.jpg" width="327"
                                         height="242" alt="teacher">
@@ -180,7 +184,7 @@
                                     <p>Опыт - 5 лет</p>
                                 </a>
                             </div>
-                            <div class="swiper-slide text-center">
+                            <div class="swiper-slide text-center  wow fadeInUp" data-wow-delay="0.4s">
                                 <a href="#">
                                     <img class="rounded-2xl mb-5" src="img/teachers/teacher-2.jpg" width="327"
                                         height="242" alt="teacher">
@@ -189,7 +193,7 @@
                                     <p>Опыт - 5 лет</p>
                                 </a>
                             </div>
-                            <div class="swiper-slide text-center">
+                            <div class="swiper-slide text-center  wow fadeInUp" data-wow-delay="0.6s">
                                 <a href="#">
                                     <img class="rounded-2xl mb-5" src="img/teachers/teacher-3.jpg" width="327"
                                         height="242" alt="teacher">
@@ -198,7 +202,7 @@
                                     <p>Опыт - 5 лет</p>
                                 </a>
                             </div>
-                            <div class="swiper-slide text-center">
+                            <div class="swiper-slide text-center  wow fadeInUp" data-wow-delay="0.8s">
                                 <a href="#">
                                     <img class="rounded-2xl mb-5" src="img/teachers/teacher-4.jpg" width="327"
                                         height="242" alt="teacher">
@@ -218,7 +222,7 @@
                 </div>
             </section>
 
-            <section class="py-20 education-section page-section-3">
+            <section class="py-20 education-section page-section-3 wow fadeInUp">
                 <div class="container relative">
                     <h2 class="text-main-black uppercase text-3xl md:text-[44px] leading-tight mb-14">Обучение в облаках
                     </h2>
@@ -234,8 +238,12 @@
                         <div class="sm:grid grid-cols-[50%_50%] gap-5">
                             <div>
                                 <p class="text-xl mb-4">15 сентября</p>
-                                <h3 class="text-4xl text-main-black mb-5">Мастер - класс по йоге на гамаках</h3>
-                                <p class="text-light-black-2 mb-12">Фитнес-программа, сочетающая в себе асаны и
+                                <h3 class="text-4xl text-main-black mb-5 wow fadeInUp" data-wow-delay="0.4s">Мастер -
+                                    класс по йоге на гамаках
+                                </h3>
+                                <p class="text-light-black-2 mb-12 wow fadeInUp" data-wow-delay="0.4s">Фитнес-программа,
+                                    сочетающая в себе
+                                    асаны и
                                     упражнения из
                                     пилатес, балета, воздушной гимнастики и акробатики. Ее главная особенность –
                                     использование подвесного оборудования в виде гамаков. Последние помогают выполнять
@@ -244,8 +252,8 @@
                                 <a class="header-call-button" href="#">Записаться</a>
                             </div>
                             <div>
-                                <img class="m-auto pt-8 sm:pt-24" src="img/education/img-2.jpg" width="209" height="291"
-                                    alt="img">
+                                <img class="m-auto pt-8 sm:pt-24 wow fadeInRight" data-wow-delay="0.6s"
+                                    src="img/education/img-2.jpg" width="209" height="291" alt="img">
                             </div>
                         </div>
                     </div>
@@ -274,7 +282,7 @@
                 </div>
             </section>
 
-            <section class="py-20 page-section-4">
+            <section class="py-20 page-section-4 wow fadeInUp">
                 <div class="container">
                     <h2 class="text-main-black uppercase text-3xl md:text-[44px] leading-tight mb-14 text-center">Мы на
                         карте</h2>
@@ -288,7 +296,7 @@
                         <div class="flex items-center justify-center min-h-[486px] bg-cover relative">
                             <img class="absolute top-0 left-0 w-full h-full object-cover" src="img/map-bg.png" alt="">
                             <div class="py-7 px-10 rounded-3xl drop-shadow-md bg-white -mb-20">
-                                <div class="flex gap-4 mb-2">
+                                <div class="flex gap-4 mb-2  wow fadeInUp" data-wow-delay="0.6s">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 22"
                                         fill="none">
                                         <g clip-path="url(#clip0_177_1374)">
@@ -307,10 +315,11 @@
                                             </clipPath>
                                         </defs>
                                     </svg>
-                                    <p class="text-main-black text-xl font-semibold">Адрес:</p>
+                                    <p class="text-main-black text-xl font-semibold wow fadeInUp" data-wow-delay="0.6s">
+                                        Адрес:</p>
                                 </div>
-                                <p class="mb-10">г. Владивосток, ул. Суханова, 49</p>
-                                <div class="flex gap-4 mb-2">
+                                <p class="mb-10 wow fadeInUp" data-wow-delay="0.6s">г. Владивосток, ул. Суханова, 49</p>
+                                <div class="flex gap-4 mb-2 wow fadeInUp" data-wow-delay="0.6s">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                                         fill="none">
                                         <g clip-path="url(#clip0_177_1363)">
@@ -324,22 +333,22 @@
                                             </clipPath>
                                         </defs>
                                     </svg>
-                                    <p class="font-semibold">Режим работы:</p>
+                                    <p class="font-semibold wow fadeInUp" data-wow-delay="0.6s">Режим работы:</p>
                                 </div>
-                                <p>Пн – Пт 07:00 – 22:00</p>
-                                <p>СБ – Вс 09:00 – 18:00</p>
+                                <p class="wow fadeInUp" data-wow-delay="0.6s">Пн – Пт 07:00 – 22:00</p>
+                                <p class="wow fadeInUp" data-wow-delay="0.6s">СБ – Вс 09:00 – 18:00</p>
                             </div>
                         </div>
                     </div>
             </section>
 
-            <section class="faq page-section-5">
+            <section class="faq page-section-5 wow fadeInUp">
                 <div class="container">
                     <h2 class="text-main-black uppercase text-3xl md:text-[44px] leading-tight mb-14 text-center">Часто
                         задаваемые вопросы</h2>
                     <div class="faq__wrapper _tabs">
                         <ul class="faq__list">
-                            <li class="faq__item _tabs-accordion">
+                            <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.2s">
                                 <button class="faq__btn _tabs-button">Что с собой брать?</button>
                                 <div class="faq__content _tabs-content">
                                     <p>Спортивную одежду для занятий йогой, сменную обувь (тапочки для душа, кроссовки).
@@ -347,7 +356,7 @@
                                         практики), а также питьевую воду с собой.</p>
                                 </div>
                             </li>
-                            <li class="faq__item _tabs-accordion">
+                            <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.4s">
                                 <button class="faq__btn _tabs-button">Что с собой брать?</button>
                                 <div class="faq__content _tabs-content">
                                     <p>Спортивную одежду для занятий йогой, сменную обувь (тапочки для душа, кроссовки).
@@ -355,7 +364,7 @@
                                         практики), а также питьевую воду с собой.</p>
                                 </div>
                             </li>
-                            <li class="faq__item _tabs-accordion">
+                            <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.6s">
                                 <button class="faq__btn _tabs-button">Что с собой брать?</button>
                                 <div class="faq__content _tabs-content">
                                     <p>Спортивную одежду для занятий йогой, сменную обувь (тапочки для душа, кроссовки).
@@ -363,7 +372,7 @@
                                         практики), а также питьевую воду с собой.</p>
                                 </div>
                             </li>
-                            <li class="faq__item _tabs-accordion">
+                            <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.8s">
                                 <button class="faq__btn _tabs-button">Что с собой брать?</button>
                                 <div class="faq__content _tabs-content">
                                     <p>Спортивную одежду для занятий йогой, сменную обувь (тапочки для душа, кроссовки).
@@ -422,15 +431,17 @@
                 </div>
             </section>
 
-            <section class="py-20 bg-[url('../src/img/yoga-bg.jpg')] mb-8">
+            <section class="py-20 bg-[url('../src/img/yoga-bg.jpg')] mb-8 wow fadeInUp">
                 <div class="container">
                     <div class="sm:grid sm:grid-cols-[50%_50%]">
                         <div class="max-w-lg mb-8 sm:mb-0">
                             <div class="relative mb-4">
                                 <h2 class="text-7xl text-white sm:text-[160px] font-extrabold leading-none">Йога</h2>
-                                <img class="absolute bottom-0 right-0" src="img/yoga-text-1.png" alt="yoga">
+                                <img class="absolute bottom-0 right-0 wow fadeInRight" src="img/yoga-text-1.png"
+                                    alt="yoga">
                             </div>
-                            <p class="text-lg text-light-black-2 pb-5 mb-10 border-b-[1px] border-light-black-3">
+                            <p
+                                class="text-lg text-light-black-2 pb-5 mb-10 border-b-[1px] border-light-black-3 wow fadeInUp">
                                 Основательница центра
                                 «Облака».
                                 Колебание
@@ -451,19 +462,19 @@
             </section>
         </main>
 
-        <footer class="py-12">
+        <footer class="py-12 wow fadeInUp">
             <h2 class="visually-hidden">Контакты</h2>
             <div class="container">
                 <div class="sm:grid gap-5 sm:grid-cols-[50%_50%] pb-7 border-b-[1px] border-light-black-3">
                     <div class="mb-8 sm:mb-0">
                         <img src="img/logo.png" width="228" height="98" alt="лого">
                         <p class="text-main-black mb-10">Успокойте свой разум, раскройте свою гибкость</p>
-                        <a class=" hover:text-blue transition-colors text-default-black font-medium block"
-                            href="tel:+79999999999">+7
+                        <a class=" hover:text-blue transition-colors text-default-black font-medium block wow fadeInRight"
+                            data-wow-delay="0.4s" href="tel:+79999999999">+7
                             (999) - 999 99
                             99</a>
-                        <a class=" hover:text-blue transition-colors text-default-black font-medium block"
-                            href="mailto:oblaka@info.com">oblaka@info.com</a>
+                        <a class=" hover:text-blue transition-colors text-default-black font-medium block wow fadeInRight"
+                            data-wow-delay="0.6s" href="mailto:oblaka@info.com">oblaka@info.com</a>
                     </div>
 
                     <div class="grid grid-cols-[50%_50%]">
@@ -521,6 +532,7 @@
         </footer>
     </div>
     <script src="swiper-bundle.min.js"></script>
+    <script src="wow.js"></script>
     <script src="main.js"></script>
 </body>
 
