@@ -1922,18 +1922,6 @@ body {
   background-image: url('../src/img/yoga-bg.jpg');
 }
 
-.bg-\[url\(\'src\/img\/bg-1\.jpg\'\)\]{
-  background-image: url('src/img/bg-1.jpg');
-}
-
-.bg-\[url\(\'\.\/src\/img\/bg-1\.jpg\'\)\]{
-  background-image: url('./src/img/bg-1.jpg');
-}
-
-.bg-\[url\(\'\.\/src\/img\/map\.jpg\'\)\]{
-  background-image: url('./src/img/map.jpg');
-}
-
 .bg-cover{
   background-size: cover;
 }
@@ -2213,13 +2201,13 @@ body {
 
 .question-title:before {
   left: -120px;
-  background-image: url('/src/img/question-left.svg');
+  background-image: url('../src/img/question-left.svg');
   background-repeat: no-repeat;
 }
 
 .question-title::after {
   right: 0;
-  background-image: url('/src/img/question-right.svg');
+  background-image: url('../src/img/question-right.svg');
   background-repeat: no-repeat;
 }
 

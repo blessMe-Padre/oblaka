@@ -106,13 +106,13 @@
 
 .question-title:before {
     left: -120px;
-    background-image: url('/src/img/question-left.svg');
+    background-image: url('../src/img/question-left.svg');
     background-repeat: no-repeat;
 }
 
 .question-title::after {
     right: 0;
-    background-image: url('/src/img/question-right.svg');
+    background-image: url('../src/img/question-right.svg');
     background-repeat: no-repeat;
 }
 
