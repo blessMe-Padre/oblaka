@@ -1627,6 +1627,10 @@ body {
   top: -1.5rem;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
 .left-0{
   left: 0px;
 }
@@ -1796,6 +1800,10 @@ body {
   max-width: 742px;
 }
 
+.max-w-lg{
+  max-width: 32rem;
+}
+
 .grid-cols-\[50\%_50\%\]{
   grid-template-columns: 50% 50%;
 }
@@ -1868,6 +1876,14 @@ body {
   border-radius: 9999px;
 }
 
+.border-b-\[1px\]{
+  border-bottom-width: 1px;
+}
+
+.border-light-black-3{
+  border-color: rgba(0, 0, 0, 0.40);
+}
+
 .bg-metal{
   --tw-bg-opacity: 1;
   background-color: rgb(86 85 132 / var(--tw-bg-opacity));
@@ -1884,6 +1900,10 @@ body {
 
 .bg-\[url\(\'\.\.\/src\/img\/map\.jpg\'\)\]{
   background-image: url('../src/img/map.jpg');
+}
+
+.bg-\[url\(\'\.\.\/src\/img\/yoga-bg\.jpg\'\)\]{
+  background-image: url('../src/img/yoga-bg.jpg');
 }
 
 .bg-cover{
@@ -1922,6 +1942,10 @@ body {
 
 .pb-11{
   padding-bottom: 2.75rem;
+}
+
+.pb-5{
+  padding-bottom: 1.25rem;
 }
 
 .pb-7{
@@ -1971,6 +1995,10 @@ body {
   line-height: 2.5rem;
 }
 
+.text-\[160px\]{
+  font-size: 160px;
+}
+
 .text-\[32px\]{
   font-size: 32px;
 }
@@ -1989,6 +2017,10 @@ body {
   font-weight: 700;
 }
 
+.font-extrabold{
+  font-weight: 800;
+}
+
 .font-semibold{
   font-weight: 600;
 }
@@ -2003,6 +2035,11 @@ body {
 
 .leading-tight{
   line-height: 1.25;
+}
+
+.text-blue{
+  --tw-text-opacity: 1;
+  color: rgb(82 120 218 / var(--tw-text-opacity));
 }
 
 .text-blue-light{
