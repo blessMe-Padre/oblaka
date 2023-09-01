@@ -1611,6 +1611,10 @@ body {
   max-width: 1440px;
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
@@ -1661,6 +1665,10 @@ body {
 
 .top-5{
   top: 1.25rem;
+}
+
+.z-10{
+  z-index: 10;
 }
 
 .m-auto{
@@ -2164,6 +2172,11 @@ body {
   filter: drop-shadow(0px 0px 11px rgba(133, 118, 38, 0.13));
 }
 
+.shadow-filter-1 {
+  background: rgba(255, 255, 255, .8);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+}
+
 .education-btn-wrapper {
   display: flex;
   gap: 20px;
@@ -2319,10 +2332,6 @@ body {
 
   .md\:gap-8{
     gap: 2rem;
-  }
-
-  .md\:bg-transparent{
-    background-color: transparent;
   }
 
   .md\:pb-36{
