@@ -17,12 +17,18 @@
                 <img src="img/logo.png" width="228" height="98" alt="лого">
                 <span class="text-main-black">г.&nbsp;Владивосток</span>
                 <ul class="flex gap-2 flex-wrap text-main-black">
-                    <li class="mr-4"><a class=" hover:text-blue transition-colors" href="#">О нас</a></li>
-                    <li class="mr-4"><a class=" hover:text-blue transition-colors" href="#">Преподаватели</a></li>
-                    <li class="mr-4"><a class=" hover:text-blue transition-colors" href="#">Анонсы</a></li>
-                    <li class="mr-4"><a class=" hover:text-blue transition-colors" href="#">Контакты</a></li>
-                    <li class="mr-4"><a class=" hover:text-blue transition-colors" href="#">Вопросы</a></li>
-                    <li class="mr-4"><a class=" hover:text-blue transition-colors" href="#">Отзывы</a></li>
+                    <li class="mr-4"><a class=" hover:text-blue transition-colors nav-link" href="#"
+                            data-goto=".page-section-1">О нас</a></li>
+                    <li class="mr-4"><a class=" hover:text-blue transition-colors nav-link" href="#"
+                            data-goto=".page-section-2">Преподаватели</a></li>
+                    <li class="mr-4"><a class=" hover:text-blue transition-colors nav-link" href="#"
+                            data-goto=".page-section-3">Анонсы</a></li>
+                    <li class="mr-4"><a class=" hover:text-blue transition-colors nav-link" href="#"
+                            data-goto=".page-section-4">Контакты</a></li>
+                    <li class="mr-4"><a class=" hover:text-blue transition-colors nav-link" href="#"
+                            data-goto=".page-section-5">Вопросы</a></li>
+                    <li class="mr-4"><a class=" hover:text-blue transition-colors nav-link" href="#"
+                            data-goto=".page-section-6">Отзывы</a></li>
                 </ul>
                 <a class="header-call-button" href="#">Записаться</a>
             </div>
@@ -62,6 +68,10 @@
 
         <main>
             <section class="bg-[url('../src/img/bg-1.jpg')] min-h-[750px] -mt-[108px] h-1">
+                <img class="hidden sm:block absolute bottom-10 right-0" src="img/men.webp" width="653" height="648"
+                    alt="">
+                <img class="hidden sm:block absolute bottom-[-100px] right-0" src="img/oblako.webp" alt="">
+
                 <div class="container h-full flex flex-col justify-between">
                     <div class="pt-64">
                         <div class="flex items-center gap-2">
@@ -105,7 +115,7 @@
                 </a>
             </section>
 
-            <section class="pt-32 pb-7">
+            <section class="pt-32 pb-7 page-section-1">
                 <div class="container">
                     <div class="md:grid md:grid-cols-2 gap-20">
                         <div>
@@ -154,7 +164,7 @@
                 </div>
             </section>
 
-            <section class="py-20 relative teachers-section w-0 min-w-[100%]">
+            <section class="py-20 relative teachers-section w-0 min-w-[100%] page-section-2">
                 <div class="container">
                     <h2 class="text-main-black uppercase text-3xl md:text-[44px] leading-tight mb-14 text-center">Наши
                         преподаватели
@@ -208,7 +218,7 @@
                 </div>
             </section>
 
-            <section class="py-20 education-section">
+            <section class="py-20 education-section page-section-3">
                 <div class="container relative">
                     <h2 class="text-main-black uppercase text-3xl md:text-[44px] leading-tight mb-14">Обучение в облаках
                     </h2>
@@ -264,11 +274,11 @@
                 </div>
             </section>
 
-            <section class="py-20">
+            <section class="py-20 page-section-4">
                 <div class="container">
                     <h2 class="text-main-black uppercase text-3xl md:text-[44px] leading-tight mb-14 text-center">Мы на
                         карте</h2>
-                    <div class="sm:grid sm:grid-cols-[50%_50%] md:grid-cols-[70%_30%] gap-8">
+                    <div class="sm:grid sm:grid-cols-[50%_50%] md:grid-cols-[70%_30%] md:gap-8">
                         <div class="mb-7 sm:mb-0 bg-[url('../src/img/map.jpg')] min-h-[360px] rounded-3xl">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2912.3227634958635!2d131.90485949479032!3d43.118745419171574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb3920ce0aaa2bb%3A0x9d8923194140cc26!2z0YPQuy4g0KHRg9GF0LDQvdC-0LLQsCwgNDksINCS0LvQsNC00LjQstC-0YHRgtC-0LosINCf0YDQuNC80L7RgNGB0LrQuNC5INC60YDQsNC5LCA2OTAwMTQ!5e0!3m2!1sru!2sru!4v1693454166048!5m2!1sru!2sru"
@@ -323,7 +333,7 @@
                     </div>
             </section>
 
-            <section class="faq">
+            <section class="faq page-section-5">
                 <div class="container">
                     <h2 class="text-main-black uppercase text-3xl md:text-[44px] leading-tight mb-14 text-center">Часто
                         задаваемые вопросы</h2>
@@ -366,7 +376,7 @@
                 </div>
             </section>
 
-            <section class="py-20 clients w-0 min-w-[100%]">
+            <section class="py-20 clients w-0 min-w-[100%] page-section-6">
                 <div class="container">
                     <h2 class="text-main-black uppercase text-3xl md:text-[44px] leading-tight mb-14 text-center">Что о
                         нас говорят клиенты?</h2>
@@ -412,13 +422,13 @@
                 </div>
             </section>
 
-            <section class="py-20 bg-[url('../src/img/yoga-bg.jpg')]">
+            <section class="py-20 bg-[url('../src/img/yoga-bg.jpg')] mb-8">
                 <div class="container">
                     <div class="sm:grid sm:grid-cols-[50%_50%]">
                         <div class="max-w-lg mb-8 sm:mb-0">
                             <div class="relative mb-4">
-                                <h2 class="text-white text-[160px] font-extrabold leading-none">Йога</h2>
-                                <img class="absolute bottom-0 right-0" src="img/yoga-text.png" alt="yoga">
+                                <h2 class="text-7xl text-white sm:text-[160px] font-extrabold leading-none">Йога</h2>
+                                <img class="absolute bottom-0 right-0" src="img/yoga-text-1.png" alt="yoga">
                             </div>
                             <p class="text-lg text-light-black-2 pb-5 mb-10 border-b-[1px] border-light-black-3">
                                 Основательница центра
@@ -428,7 +438,7 @@
                                 пренебречь
                                 колебаниями корпуса, хотя
                                 этого в любом случае требует интеграл </p>
-                            <div class="flex items-center justify-between gap-5">
+                            <div class="flex items-center justify-between gap-5 flex-wrap">
                                 <span class="text-blue">Присоединяйся прямо сейчас!</span>
                                 <a class="header-call-button" href="#">Заглянуть</a>
                             </div>
@@ -439,11 +449,76 @@
                     </div>
                 </div>
             </section>
+        </main>
 
+        <footer class="py-12">
+            <h2 class="visually-hidden">Контакты</h2>
+            <div class="container">
+                <div class="sm:grid gap-5 sm:grid-cols-[50%_50%] pb-7 border-b-[1px] border-light-black-3">
+                    <div class="mb-8 sm:mb-0">
+                        <img src="img/logo.png" width="228" height="98" alt="лого">
+                        <p class="text-main-black mb-10">Успокойте свой разум, раскройте свою гибкость</p>
+                        <a class=" hover:text-blue transition-colors text-default-black font-medium block"
+                            href="tel:+79999999999">+7
+                            (999) - 999 99
+                            99</a>
+                        <a class=" hover:text-blue transition-colors text-default-black font-medium block"
+                            href="mailto:oblaka@info.com">oblaka@info.com</a>
+                    </div>
 
-            <footer class="min-h-2 bg-slate-600">
-                footer
-            </footer>
+                    <div class="grid grid-cols-[50%_50%]">
+                        <div>
+                            <h3 class="text-main-black text-lg font-semibold mb-7">Навигация</h3>
+
+                            <div class="md:grid grid-cols-[55%_40%] gap-3">
+                                <ul>
+                                    <li class="mb-4"><a class=" hover:text-blue transition-colors nav-link" href="#"
+                                            data-goto=".page-section-1"> О
+                                            нас</a> </li>
+                                    <li class="mb-4"><a class=" hover:text-blue transition-colors nav-link" href="#"
+                                            data-goto=".page-section-2">
+                                            Преподаватели</a>
+                                    </li>
+                                    <li class="mb-4"><a class=" hover:text-blue transition-colors nav-link" href="#"
+                                            data-goto=".page-section-3">
+                                            Анонсы</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="mb-4"><a class=" hover:text-blue transition-colors nav-link" href="#"
+                                            data-goto=".page-section-4">
+                                            Контакты</a></li>
+                                    <li class="mb-4"><a class=" hover:text-blue transition-colors nav-link" href="#"
+                                            data-goto=".page-section-5">
+                                            Вопросы</a></li>
+                                    <li class="mb-4"><a class=" hover:text-blue transition-colors nav-link" href="#"
+                                            data-goto=".page-section-6">
+                                            Отзывы</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="md:text-right">
+                            <h3 class="text-main-black text-lg font-semibold mb-7">Мы в соц.сетях</h3>
+                            <ul>
+                                <li class="mb-4"><a class=" hover:text-blue transition-colors" href="#">
+                                        Инстаграм</a></li>
+                                <li class="mb-4"><a class=" hover:text-blue transition-colors" href="#">
+                                        ВКонтакте</a></li>
+                                <li class="mb-4"><a class=" hover:text-blue transition-colors" href="#">
+                                        Телеграм</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between flex-col sm:flex-row py-5 ">
+                    <p>©2023 Облака. Все права защищены</p>
+                    <a class="hover:text-blue transition-colors" href="http://inside360.ru" target="_blank">Сделано
+                        в INSIDE360</a>
+                </div>
+
+            </div>
+        </footer>
     </div>
     <script src="swiper-bundle.min.js"></script>
     <script src="main.js"></script>
