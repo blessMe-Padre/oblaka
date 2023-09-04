@@ -3,6 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
     console.log('подключен скрипт main.js');
 
     const body = document.querySelector('body');
+    const header = document.querySelector('header');
 
     // Меню
     const mobileMenu = document.querySelector('.mobile-menu');
@@ -146,7 +147,7 @@ window.addEventListener('DOMContentLoaded', () => {
             const menuLink = evt.target;
             if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
                 const gotoBlock = document.querySelector(menuLink.dataset.goto);
-                const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset;
+                const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - header.offsetHeight;
 
                 window.scrollTo({
                     top: gotoBlockValue,
@@ -163,7 +164,6 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    const header = document.querySelector('header');
     window.addEventListener('scroll', () => {
         let scrollTop = window.scrollY;
         if (scrollTop >= 50) {
@@ -175,5 +175,3 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // DOMContentLoaded
 });
-
-
