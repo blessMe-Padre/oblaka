@@ -1032,6 +1032,199 @@ button.swiper-pagination-bullet{
 
 /* faq end  */
 
+.call-to-action {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 600px;
+  min-height: 480px;
+  z-index: 9;
+  border-radius: 25px;
+  padding: 50px 30px;
+  text-align: center;
+  background: rgba(255, 255, 255, .9);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.call-to-action.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.call-to-action__small {
+  color: rgba(26, 26, 26, 0.40);
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.call-to-action__title {
+  color: rgba(26, 26, 26, 0.90);
+  font-size: 42px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.call-to-action__text {
+  color: rgba(26, 26, 26, 0.90);
+  font-size: 18px;
+  line-height: 1;
+  margin-bottom: 50px;
+}
+
+.call-to-action__btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.call-to-action__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -20;
+  border-radius: 25px;
+}
+
+@media (max-width: 767px) {
+  .call-to-action {
+    min-width: 100%;
+    min-height: 350px;
+  }
+
+  .call-to-action__title {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+}
+
+.online__wrapper {
+  padding-top: 30px;
+  background-image: url('../src/img/popup/online-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.online__link {
+  padding: 40px 68px;
+  border-radius: 41.304px;
+  border: 3px solid #203D8A;
+  display: block;
+  margin: 0 auto;
+  max-width: 807px;
+}
+
+.online__title {
+  color: #203D8A;
+  font-size: 69px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.online__text {
+  color: #203D8A;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .online__wrapper {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .online__title {
+    font-size: 32px;
+  }
+
+  .online__text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 390px) {
+  .online__title {
+    font-size: 24px;
+  }
+}
+
+.gift {
+  padding: 50px 0;
+  min-height: 450px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-image: url('../src/img/popup/gift__bg.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.gift__wrapper-img {
+  margin: 0 auto;
+}
+
+.gift__link {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.gift__title {
+  color: #203D8A;
+  font-size: 35.162px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.gift__text {
+  color: #203D8A;
+  font-size: 82.002px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .gift {
+    background-size: cover;
+  }
+
+  .gift__link {
+    padding: 0 15px;
+  }
+
+  .gift__title {
+    font-size: 20px;
+  }
+
+  .gift__text {
+    font-size: 32px;
+  }
+
+  .gift__img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 /* Импорт TailWind */
 
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
@@ -1665,6 +1858,10 @@ body {
 
 .top-5{
   top: 1.25rem;
+}
+
+.-z-10{
+  z-index: -10;
 }
 
 .z-10{

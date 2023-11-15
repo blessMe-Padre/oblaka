@@ -173,5 +173,25 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+
+    // модальное окно призыв к действию
+    const callPopup = document.querySelector('.call-to-action');
+
+    if (callPopup) {
+        const callPopupBtn = document.querySelector('.call-to-action__btn');
+        const callPopupSecond = 300000000; // время через которое появляется попап в м/с
+
+        const showCallPopup = () => {
+            callPopup.classList.add('is-active');
+        }
+
+        setTimeout(showCallPopup, callPopupSecond)
+
+        callPopupBtn.addEventListener('click', () => {
+            callPopup.classList.remove('is-active');
+        });
+    }
+
+
     // DOMContentLoaded
 });
