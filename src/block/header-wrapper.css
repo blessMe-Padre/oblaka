@@ -1,0 +1,26 @@
+.header-wrapper {
+    position: relative;
+}
+
+.header-wrapper-modal {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #31302e;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 200px;
+    z-index: 5;
+    transform-origin: 0 0;
+    transform: rotateX(-90deg);
+    transition: all .3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header-wrapper__btn:hover+.header-wrapper-modal {
+    transform: rotateX(0);
+    opacity: 1;
+    visibility: visible;
+}

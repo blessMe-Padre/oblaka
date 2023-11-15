@@ -1225,6 +1225,136 @@ button.swiper-pagination-bullet{
   }
 }
 
+.offer {
+  padding: 30px 0;
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.offer__title {
+  color: #5278DA;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .offer {
+    flex-direction: column;
+  }
+
+  .offer__title {
+    font-size: 16px;
+  }
+}
+
+.catalog {
+  padding: 60px 0;
+  background: #F9F8F4;
+}
+
+.catalog__item-img {
+  margin-bottom: 15px;
+}
+
+.catalog__item-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.catalog__item-title {
+  color: rgba(26, 26, 26, 0.90);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.catalog__item-text {
+  color: rgba(26, 26, 26, 0.60);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 28px;
+}
+
+.catalog__item-footer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.catalog__item-footer p {
+  color: rgba(26, 26, 26, 0.90);
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.catalog__item-link {
+  display: inline-flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 30px;
+  background: #5278DA;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.catalog__list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(321px, 1fr));
+  margin-bottom: 60px;
+}
+
+.catalog__descroption {
+  color: rgba(0, 0, 0, 0.60);
+  font-size: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.header-wrapper {
+  position: relative;
+}
+
+.header-wrapper-modal {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #31302e;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 200px;
+  z-index: 5;
+  transform-origin: 0 0;
+  transform: rotateX(-90deg);
+  transition: all .3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header-wrapper__btn:hover+.header-wrapper-modal {
+  transform: rotateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
 /* Импорт TailWind */
 
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
@@ -2075,6 +2205,10 @@ body {
 
 .gap-6{
   gap: 1.5rem;
+}
+
+.gap-7{
+  gap: 1.75rem;
 }
 
 .overflow-hidden{

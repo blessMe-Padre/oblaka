@@ -1,0 +1,26 @@
+.offer {
+    padding: 30px 0;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.offer__title {
+    color: #5278DA;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+    .offer {
+        flex-direction: column;
+    }
+
+    .offer__title {
+        font-size: 16px;
+    }
+}

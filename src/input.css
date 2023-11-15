@@ -10,9 +10,13 @@
 @import './block/sliders.css';
 @import './block/faq.css';
 
+
 @import './block/call-to-action.css';
 @import './block/online.css';
 @import './block/gift.css';
+@import './block/offer.css';
+@import './block/catalog.css';
+@import './block/header-wrapper.css';
 
 
 /* Импорт TailWind */
