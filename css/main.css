@@ -1287,13 +1287,13 @@ button.swiper-pagination-bullet{
   margin-bottom: 28px;
 }
 
-.catalog__item-footer {
+.catalog-item-footer {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.catalog__item-footer p {
+.catalog-item-footer p {
   color: rgba(26, 26, 26, 0.90);
   text-align: center;
   font-size: 25px;
@@ -1302,7 +1302,7 @@ button.swiper-pagination-bullet{
   line-height: normal;
 }
 
-.catalog__item-link {
+.catalog-item-link {
   display: inline-flex;
   padding: 10px 20px;
   align-items: center;
@@ -1334,25 +1334,122 @@ button.swiper-pagination-bullet{
 
 .header-wrapper-modal {
   margin: 0;
-  padding: 0;
+  padding: 17px 25px;
   list-style: none;
-  background-color: #31302e;
+  background-color: #ffffff;
   position: absolute;
-  top: 30px;
+  top: 50px;
   left: 0;
-  width: 200px;
+  width: 220px;
   z-index: 5;
   transform-origin: 0 0;
   transform: rotateX(-90deg);
   transition: all .3s ease;
   opacity: 0;
   visibility: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
 }
 
-.header-wrapper__btn:hover+.header-wrapper-modal {
+.header-wrapper-modal a {
+  color: rgba(26, 26, 26, 0.90);
+  transition: color 0.3s ease;
+}
+
+.header-wrapper-modal a:hover {
+  color: #5278DA;
+}
+
+.header-wrapper:hover .header-wrapper-modal {
   transform: rotateX(0);
   opacity: 1;
   visibility: visible;
+}
+
+.breadcrumbs {
+  margin-top: 120px;
+  color: rgba(26, 26, 26);
+  padding: 25px 0;
+}
+
+.breadcrumbs ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.breadcrumbs span {
+  opacity: 0.6;
+}
+
+.lesson {
+}
+
+.lesson__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.lesson__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.lesson__title {
+  color: rgba(26, 26, 26, 0.90);
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+.lesson__subtitle {
+  color: rgba(26, 26, 26, 0.90);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.lesson__text {
+  color: rgba(26, 26, 26, 0.60);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.teacher {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.teacher__wrapper h3 {
+  color: rgba(26, 26, 26, 0.90);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.teacher__wrapper p {
+  color: rgba(26, 26, 26, 0.60);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (max-width: 767px) {
+  .lesson__wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Импорт TailWind */

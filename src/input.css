@@ -17,6 +17,8 @@
 @import './block/offer.css';
 @import './block/catalog.css';
 @import './block/header-wrapper.css';
+@import './block/breadcrumbs.css';
+@import './block/lesson.css';
 
 
 /* Импорт TailWind */

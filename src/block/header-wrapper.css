@@ -4,22 +4,33 @@
 
 .header-wrapper-modal {
     margin: 0;
-    padding: 0;
+    padding: 17px 25px;
     list-style: none;
-    background-color: #31302e;
+    background-color: #ffffff;
     position: absolute;
-    top: 30px;
+    top: 50px;
     left: 0;
-    width: 200px;
+    width: 220px;
     z-index: 5;
     transform-origin: 0 0;
     transform: rotateX(-90deg);
     transition: all .3s ease;
     opacity: 0;
     visibility: hidden;
+
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
 }
 
-.header-wrapper__btn:hover+.header-wrapper-modal {
+.header-wrapper-modal a {
+    color: rgba(26, 26, 26, 0.90);
+    transition: color 0.3s ease;
+}
+
+.header-wrapper-modal a:hover {
+    color: #5278DA;
+}
+
+.header-wrapper:hover .header-wrapper-modal {
     transform: rotateX(0);
     opacity: 1;
     visibility: visible;
