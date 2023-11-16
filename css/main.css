@@ -1381,6 +1381,12 @@ button.swiper-pagination-bullet{
   opacity: 0.6;
 }
 
+@media (max-width: 767px) {
+  .breadcrumbs ul {
+    font-size: 12px;
+  }
+}
+
 .lesson {
 }
 
